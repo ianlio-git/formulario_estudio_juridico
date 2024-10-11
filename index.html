@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Estudio Jurídico - Consultas</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex flex-col min-h-screen">
+  <nav class="bg-blue-600">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <div class="flex items-center">
+          <a href="#" class="text-white font-bold text-xl">Estudio Jurídico</a>
+        </div>
+        <div class="hidden md:block">
+          <div class="ml-10 flex items-baseline space-x-4">
+            <a href="#" class="text-white hover:bg-blue-700 px-3 py-2 rounded-md text-sm font-medium">Inicio</a>
+            <a href="#" class="text-white hover:bg-blue-700 px-3 py-2 rounded-md text-sm font-medium">Servicios</a>
+            <a href="#" class="text-white hover:bg-blue-700 px-3 py-2 rounded-md text-sm font-medium">Contacto</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="md:hidden">
+      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <a href="#" class="text-white hover:bg-blue-700 block px-3 py-2 rounded-md text-base font-medium">Inicio</a>
+        <a href="#" class="text-white hover:bg-blue-700 block px-3 py-2 rounded-md text-base font-medium">Servicios</a>
+        <a href="#" class="text-white hover:bg-blue-700 block px-3 py-2 rounded-md text-base font-medium">Contacto</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="flex-grow container mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold mb-6 text-center">Enviar Consulta</h1>
+    
+    <form id="consultaForm" class="max-w-lg mx-auto bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+      <div class="mb-4">
+        <label class="block text-gray-700 text-sm font-bold mb-2" for="nombre">
+          Nombre
+        </label>
+        <input 
+          class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" 
+          id="nombre" 
+          type="text" 
+          placeholder="Tu nombre" 
+          required>
+      </div>
+      
+      <div class="mb-4">
+        <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+          Correo Electrónico
+        </label>
+        <input 
+          class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" 
+          id="email" 
+          type="email" 
+          placeholder="Tu correo electrónico" 
+          required>
+      </div>
+      
+      <div class="mb-4">
+        <label class="block text-gray-700 text-sm font-bold mb-2" for="asunto">
+          Asunto
+        </label>
+        <input 
+          class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" 
+          id="asunto" 
+          type="text" 
+          placeholder="Asunto de tu consulta" 
+          required>
+      </div>
+      
+      <div class="mb-6">
+        <label class="block text-gray-700 text-sm font-bold mb-2" for="mensaje">
+          Mensaje
+        </label>
+        <textarea 
+          class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" 
+          id="mensaje" 
+          rows="5" 
+          placeholder="Tu mensaje" 
+          required></textarea>
+      </div>
+      
+      <div class="flex items-center justify-between">
+        <button 
+          type="submit" 
+          class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+          Enviar
+        </button>
+      </div>
+    </form>
+  </main>
+
+  <footer class="bg-blue-600 text-white py-4">
+    <div class="container mx-auto px-4 text-center">
+      <p>&copy; 2024 Estudio Jurídico. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
